@@ -1,0 +1,32 @@
+name: project-name
+version: 0.0.1.0
+author: Marco Yuen
+
+dependencies:
+  - base >= 4.18 && < 5
+  - bytestring
+  - containers
+  - extra
+  - mtl
+  - text
+  - transformers
+
+ghc-options:
+  - -Wcompat
+  - -Wincomplete-patterns
+  - -Wincomplete-record-updates
+  - -Wredundant-constraints
+  - -Wunused-packages
+  - -fdefer-typed-holes
+  - -fshow-hole-constraints
+  - -fwrite-ide-info
+
+default-extensions:
+  - DataKinds
+  - LambdaCase
+  - NamedFieldPuns
+  - OverloadedStrings
+  - TypeApplications
+  - ViewPatterns
+# library:
+#   source-dirs: src
