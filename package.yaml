@@ -1,6 +1,7 @@
 name: project-name
 version: 0.0.1.0
 author: Marco Yuen
+language: GHC2021
 
 dependencies:
   - base >= 4.18 && < 5
