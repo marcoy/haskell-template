@@ -26,6 +26,7 @@ default-extensions:
   - DataKinds
   - LambdaCase
   - NamedFieldPuns
+  - OverloadedRecordDot
   - OverloadedStrings
   - TypeApplications
   - ViewPatterns
