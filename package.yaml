@@ -25,10 +25,8 @@ ghc-options:
 default-extensions:
   - DataKinds
   - LambdaCase
-  - NamedFieldPuns
   - OverloadedRecordDot
   - OverloadedStrings
-  - TypeApplications
   - ViewPatterns
 
 # library:
