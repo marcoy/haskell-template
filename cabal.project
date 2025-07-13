@@ -1,11 +1,12 @@
 jobs: $ncpus
+verbose: 3
 
 import: https://www.stackage.org/lts-23.27/cabal.config
 
-packages: .
+packages: *.cabal
 
 allow-newer: all
 
 tests: True
-
 benchmarks: True
+run-tests: True
