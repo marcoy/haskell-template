@@ -7,6 +7,7 @@ dependencies:
   - base >= 4.18 && < 5
   - bytestring
   - containers
+  - exceptions
   - extra
   - mtl
   - text
@@ -27,6 +28,7 @@ default-extensions:
   - LambdaCase
   - OverloadedRecordDot
   - OverloadedStrings
+  - PatternSynonyms
   - ViewPatterns
 
 # library:
@@ -41,7 +43,7 @@ default-extensions:
 #       - -rtsopts
 #       - -with-rtsopts=-N
 #     dependencies:
-#       - package
+#       - package-name
 
 tests:
   test:
