@@ -22,9 +22,10 @@ ghc-options:
   - -fdefer-typed-holes
   - -fshow-hole-constraints
   - -fwrite-ide-info
+  - -fprint-explicit-foralls
 
 default-extensions:
-  - DataKinds
+  - GADTs
   - LambdaCase
   - OverloadedRecordDot
   - OverloadedStrings
