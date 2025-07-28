@@ -25,10 +25,13 @@ ghc-options:
   - -fprint-explicit-foralls
 
 default-extensions:
+  - DataKinds
   - GADTs
   - LambdaCase
+  - NamedWildCards
   - OverloadedRecordDot
   - OverloadedStrings
+  - PartialTypeSignatures
   - PatternSynonyms
   - ViewPatterns
 
