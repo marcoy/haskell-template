@@ -1,12 +1,14 @@
-name: project-name
-version: 0.0.1.0
-author: Marco Yuen
-language: GHC2021
+name:       project-name
+version:    0.0.1.0
+copyright:  © 2025 Marco Yuen
+author:     Marco Yuen
+license:    GPL-3.0-or-later
+language:   GHC2021
+synopsis:   Project template
 
 dependencies:
   - base >= 4.18 && < 5
   - bytestring
-  - containers
   - exceptions
   - extra
   - mtl
@@ -26,6 +28,7 @@ ghc-options:
 
 default-extensions:
   - DataKinds
+  - DerivingStrategies
   - GADTs
   - LambdaCase
   - NamedWildCards
@@ -33,6 +36,7 @@ default-extensions:
   - OverloadedStrings
   - PartialTypeSignatures
   - PatternSynonyms
+  - RecordWildCards
   - ViewPatterns
 
 # library:
@@ -50,7 +54,7 @@ default-extensions:
 #       - package-name
 
 tests:
-  test:
+  project-tests:
     main: Driver.hs
     source-dirs: test
     build-tools:

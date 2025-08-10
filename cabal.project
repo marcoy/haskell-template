@@ -10,3 +10,17 @@ allow-newer: all
 tests: True
 benchmarks: True
 run-tests: True
+
+if os(darwin)
+  if arch(aarch64)
+    package *
+      extra-include-dirs:
+          /opt/homebrew/include
+      extra-lib-dirs:
+          /opt/homebrew/lib
+  else
+    package *
+      extra-include-dirs:
+          /opt/local/include
+      extra-lib-dirs:
+          /opt/local/lib
