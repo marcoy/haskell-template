@@ -1,12 +1,14 @@
 jobs: $ncpus
 verbose: 3
 
-import: https://www.stackage.org/nightly-2025-09-02/cabal.config
+import: https://www.stackage.org/nightly-2025-09-11/cabal.config
 
 packages: *.cabal
 
 allow-newer: all
 
+-- https://well-typed.com/blog/2023/03/cabal-multi-unit/
+multi-repl: True
 tests: True
 benchmarks: True
 run-tests: True
