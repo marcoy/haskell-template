@@ -32,16 +32,19 @@ ghc-options:
 default-extensions:
   - DataKinds
   - DerivingStrategies
+  - DuplicatedRecordFields
   - GADTs
   - LambdaCase
   - MultilineStrings
   - NamedWildCards
   - OverloadedRecordDot
+  # - OverloadedRecordUpdate
   - OverloadedStrings
   - PartialTypeSignatures
   - PatternSynonyms
   - RecordWildCards
   - ViewPatterns
+  - NoFieldSelectors
 
 # library:
 #   source-dirs: src
