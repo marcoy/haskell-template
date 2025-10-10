@@ -15,14 +15,16 @@ dependencies:
   - bytestring
   - exceptions
   - extra
-  # - generic-lens
-  # - lens
+  - generic-lens
+  - lens
   # - lens-aeson
+  - monad-logger
   - mtl
   - string-interpolate
   - text
   - text-show
   - transformers
+  - yaml
 
 ghc-options:
   - -Wcompat
@@ -44,7 +46,7 @@ default-extensions:
   - MultilineStrings
   - NamedWildCards
   - OverloadedLabels
-  # - OverloadedLists
+  - OverloadedLists
   - OverloadedRecordDot
   - OverloadedRecordUpdate
   - OverloadedStrings
@@ -73,7 +75,7 @@ default-extensions:
 #       - package-name
 
 tests:
-  project-tests:
+  project-test:
     main: Driver.hs
     source-dirs: test
     build-tools:
