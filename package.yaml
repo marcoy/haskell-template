@@ -20,6 +20,8 @@ dependencies:
   # - lens-aeson
   - monad-logger
   - mtl
+  # - singletons
+  # - singletons-th
   - string-interpolate
   - text
   - text-show
