@@ -57,6 +57,7 @@ default-extensions:
   - RecordWildCards
   - ViewPatterns
   - NoFieldSelectors
+  - NoStarIsType
 
 # library:
 #   source-dirs: src
