@@ -55,6 +55,7 @@ default-extensions:
   - PartialTypeSignatures
   - PatternSynonyms
   - RecordWildCards
+  - TypeAbstractions
   - ViewPatterns
   - NoFieldSelectors
   - NoStarIsType
