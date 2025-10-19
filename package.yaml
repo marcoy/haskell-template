@@ -29,15 +29,16 @@ dependencies:
   - yaml
 
 ghc-options:
+  # - -ddump-splices
+  - -fdefer-typed-holes
+  - -fprint-explicit-foralls
+  - -fshow-hole-constraints
+  - -fwrite-ide-info
   - -Wcompat
   - -Wincomplete-patterns
   - -Wincomplete-record-updates
   - -Wredundant-constraints
-  - -Wunused-packages
-  - -fdefer-typed-holes
-  - -fshow-hole-constraints
-  - -fwrite-ide-info
-  - -fprint-explicit-foralls
+  # - -Wunused-packages
 
 default-extensions:
   - DataKinds
