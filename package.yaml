@@ -32,6 +32,7 @@ ghc-options:
   # - -ddump-splices
   - -fdefer-typed-holes
   - -fprint-explicit-foralls
+  - -fprint-explicit-kinds
   - -fshow-hole-constraints
   - -fwrite-ide-info
   - -Wcompat
