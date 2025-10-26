@@ -1,7 +1,7 @@
 jobs: $ncpus
 verbose: 3
 
-import: https://www.stackage.org/nightly-2025-10-10/cabal.config
+import: https://www.stackage.org/nightly-2025-10-26/cabal.config
 
 packages: *.cabal
 
