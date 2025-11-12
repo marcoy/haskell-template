@@ -35,6 +35,7 @@ dependencies:
   - yaml
 
 ghc-options:
+  # - -ddump-deriv
   # - -ddump-splices
   - -fdefer-typed-holes
   - -fprint-explicit-foralls
@@ -64,6 +65,7 @@ default-extensions:
   - PatternSynonyms
   - RecordWildCards
   - TypeAbstractions
+  - TypeFamilies
   - ViewPatterns
   - NoFieldSelectors
   - NoStarIsType
