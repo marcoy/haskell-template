@@ -13,6 +13,7 @@ dependencies:
   - base >= 4.18 && < 5
   # - aeson
   - bytestring
+  - containers
   - deepseq
   - exceptions
   - extra
@@ -27,11 +28,14 @@ dependencies:
   - safe
   # - singletons
   # - singletons-th
+  # - stm
+  # - stm-chans
   - string-interpolate
   - text
   - text-show
   - transformers
   # - transformers-base
+  - unordered-containers
   - yaml
 
 ghc-options:
