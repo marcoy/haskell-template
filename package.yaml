@@ -55,6 +55,7 @@ ghc-options:
 default-extensions:
   - DataKinds
   - DerivingStrategies
+  - DerivingVia
   - DuplicateRecordFields
   - GADTs
   - LambdaCase
