@@ -6,6 +6,12 @@ license:    GPL-3.0-or-later
 language:   GHC2021
 synopsis:   Project template
 
+flags:
+  release:
+    description: Compile executables for a release.
+    default: False
+    manual: True
+
 # data-files:
 #   - data/*.*
 
@@ -92,6 +98,10 @@ default-extensions:
 #       - -with-rtsopts=-N
 #     dependencies:
 #       - package-name
+#     when:
+#       - condition: flag(release)
+#         ghc-options:
+#           - -O2
 
 tests:
   project-test:
