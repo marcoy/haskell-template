@@ -66,6 +66,7 @@ default-extensions:
   - GADTs
   - LambdaCase
   - MultilineStrings
+  - MultiWayIf
   - NamedWildCards
   - OverloadedLabels
   - OverloadedLists
@@ -75,6 +76,7 @@ default-extensions:
   - PartialTypeSignatures
   - PatternSynonyms
   - RecordWildCards
+  - RequiredTypeArguments
   - TypeAbstractions
   - TypeFamilies
   - ViewPatterns
