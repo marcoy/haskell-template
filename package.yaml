@@ -41,7 +41,6 @@ dependencies:
   - text
   - text-show
   - transformers
-  # - transformers-base
   # - unliftio
   - unordered-containers
   - yaml
