@@ -34,6 +34,7 @@ dependencies:
   # - resourcet
   - safe
   # - singletons
+  # - singletons-base
   # - singletons-th
   # - stm
   # - stm-chans
