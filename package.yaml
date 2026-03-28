@@ -1,10 +1,11 @@
-name:       project-name
-version:    0.0.1.0
-copyright:  © 2026 Marco Yuen
-author:     Marco Yuen
-license:    GPL-3.0-or-later
-language:   GHC2021
-synopsis:   Project template
+name:          project-name
+version:       0.0.1.0
+copyright:     © 2026 Marco Yuen
+author:        Marco Yuen
+license:       GPL-3.0-or-later
+license-file:  LICENSE
+language:      GHC2021
+synopsis:      Project template
 
 flags:
   release:
