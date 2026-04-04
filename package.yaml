@@ -75,7 +75,6 @@ default-extensions:
   - OverloadedLabels
   - OverloadedLists
   - OverloadedRecordDot
-  - OverloadedRecordUpdate
   - OverloadedStrings
   - PartialTypeSignatures
   - PatternSynonyms
