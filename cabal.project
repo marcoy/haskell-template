@@ -7,11 +7,30 @@ packages: *.cabal
 
 allow-newer: all
 
+-- HLS/hie-bios invokes `cabal repl --with-repl ...`, which forces every
+-- build-type: Custom setup dep (entropy, via req -> authenticate-oauth -> RSA ->
+-- crypto-api) to use Cabal >= 3.15, while GHC 9.12.4 only ships Cabal-3.14.2.0.
+-- `allow-newer: all` above then drops Cabal's `Cabal-syntax == <same version>`
+-- bound, so the solver happily pairs Cabal-3.16.1.0 with the installed
+-- Cabal-syntax-3.14.2.0 and the build dies on Cabal's module re-exports
+-- ("Distribution.Compat.MonadFail is not exported by any suitable package").
+-- Keep the setup-scoped pair in lockstep. Note: bare stackage constraints such as
+-- `Cabal installed` do not apply to setup goals, hence the explicit setup. scope.
+--
+-- Unrelated to the cabal-install version; this tracks what GHC bundles. After a GHC
+-- upgrade, run `ghc-pkg list --global | grep Cabal` -- if the bundled Cabal is >= 3.15,
+-- delete these two lines so setup deps use it instead of building 3.16.1.0 from Hackage.
+-- Otherwise bump both versions together; never let them drift apart.
+constraints:
+    setup.Cabal ==3.16.1.0,
+    setup.Cabal-syntax ==3.16.1.0
+
 -- https://well-typed.com/blog/2023/03/cabal-multi-unit/
 multi-repl: True
 tests: True
 benchmarks: True
 run-tests: True
+semaphore: True
 
 if os(darwin)
   if arch(aarch64)
