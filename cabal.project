@@ -1,7 +1,7 @@
 jobs: $ncpus
 verbose: 3
 
-import: https://www.stackage.org/nightly-2026-08-02/cabal.config
+import: https://www.stackage.org/nightly-2026-08-17/cabal.config
 
 packages: *.cabal
 
@@ -30,7 +30,10 @@ multi-repl: True
 tests: True
 benchmarks: True
 run-tests: True
-semaphore: True
+semaphore: False
+
+package package-name
+  ghc-options: -j6 +RTS -N6 -A64m -RTS
 
 if os(darwin)
   if arch(aarch64)
