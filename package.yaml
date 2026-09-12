@@ -33,10 +33,12 @@ dependencies:
   - effectful-th
   - generic-lens
   # - haskeline
+  - katip
+  - katip-effectful
   - lens
   # - lens-aeson
-  - monad-logger
-  - monad-logger-extras
+  # - monad-logger
+  # - monad-logger-extras
   - mtl
   - optparse-applicative
   - name: relude
@@ -44,7 +46,9 @@ dependencies:
       - (Relude as Prelude)
       - ''
   # - resourcet
-  - retry
+  # - resourcet-effectful
+  # - retry
+  # - retry-effectful
   - safe
   # - singletons
   # - singletons-base
